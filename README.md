@@ -20,3 +20,4 @@ will count Mean Valeance for Tetrahedral Mesh such as
 C = V - E + F - T
 ```
 
+and this convert .ovm to output.inp as UCD inp format.
