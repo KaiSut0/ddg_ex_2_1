@@ -78,7 +78,7 @@ void printUsage(const std::string& progname)
 {
   std::cout << "usage: " << progname << " <inFile>" << std::endl
             << std::endl
-            << "Reads input tet mesh with properties from <inFile> " << std::endl;
+            << "Reads input tet mesh with properties from <inFile> as OpenVolumeMesh format (.ovm)" << std::endl;
 }
 
 int main(int argc, const char* argv[]) {
