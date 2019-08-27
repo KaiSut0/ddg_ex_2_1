@@ -61,9 +61,14 @@ void countMeanValeance(const std::string& inFileName)
     int F = tetmesh.n_faces();
     int T = tetmesh.n_cells();
 
+    double E_V = (double)E/(double)V;
+    double F_V = (double)F/(double)V;
+    double T_V = (double)T/(double)V;
+
     int const C = V - E + F - T;
 
     cout << "V - E + F - T = " << C << endl;
+    cout << "V : E : F : T = " << 1.0 << " : " << E_V << " : " << F_V << " : " << T_V << endl;
 
     save_ovm_as_UCD_inp(tetmesh);
 }
